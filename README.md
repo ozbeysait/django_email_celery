@@ -76,8 +76,19 @@ Go to the http://127.0.0.1:8000/sendmail/<br>
 ![image](https://user-images.githubusercontent.com/41578459/196013969-08259b06-c181-4210-9677-50e96e649864.png)
 
 
+## Schedule Tasks with Celery Beat
+Configure celery.py file<br>
+![image](https://user-images.githubusercontent.com/41578459/196014375-d0492bfd-b3bb-4224-89cf-c8106930919a.png)
+<br>
+Run celery beat
+```
+celery -A django_email_celery beat -l info
+```
+![image](https://user-images.githubusercontent.com/41578459/196014405-b5588549-b477-435a-b210-1cff357ab646.png)
+<br>
+Check your celery results<br>
+![image](https://user-images.githubusercontent.com/41578459/196014420-364e9052-dff8-46c6-b095-a4d28934a6ef.png)
 
-
-
-
-
+<br>
+Check email<br>
+![image](https://user-images.githubusercontent.com/41578459/196014502-94d0c7ec-ef84-4f42-9cf7-712132b12f39.png)
